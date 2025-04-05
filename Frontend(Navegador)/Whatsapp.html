@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href='./img/whats.png' />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="./img/whatsbot_logo.png" style="width: 550px">
+        <button class="open-btn" id="openModal">Conectar whatsapp</button>
+        <button class="open-btn-2" onclick="verificaConexao()">Verificar conexão</button>
+        <div class="status-message" id="statusMsg"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="modalBody">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

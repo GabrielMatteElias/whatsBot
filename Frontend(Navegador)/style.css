@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 550px;
+    text-align: center;
+}
+
+/* Botão de abrir */
+.open-btn {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.open-btn:hover {
+    background-color: #2055c7;
+}
+
+.open-btn-2 {
+    background-color: #27ae60;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.open-btn-2:hover {
+    background-color: #1e8548;
+}
+
+.status-message{
+    margin-top: 10px;
+}
+
+/* Fundo do modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
